@@ -1,0 +1,14 @@
+site:
+  title: "Narcissus"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/narcissus.js"
+      api: "build/libs/narcissus.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/narcissus.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
